@@ -1,5 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import Result from './Result';
+import Button from './Buttons';
 
 // Calculator class coponent which is the container class for Result and Button class
 class Calculator extends React.Component {
@@ -27,23 +28,5 @@ class Calculator extends React.Component {
   }
 }
 
-
-// Button class component
-class Button extends React.Component {
-  constructor({ name, value }) {
-    super({ name, value });
-    this.name = name;
-    this.value = value;
-  }
-
-  render() {
-    return <button type="button" id={this.name}>{this.value}</button>;
-  }
-}
-
-Button.prototype = {
-  name: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
-};
 
 export default Calculator;

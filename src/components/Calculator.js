@@ -25,4 +25,21 @@ class Calculator extends React.Component{
     }
 }
 
+class Result extends React.Component {
+    constructor({name, value}){
+        super({name, value})
+        this.name = name;
+        this.value = value;
+    }
+    render(){
+        return <div id={this.name}>{this.value}</div>
+    }
+
+}
+
+Result.prototype = {
+    name: PropTypes.string.isRequired,
+    value: PropTypes.string.isRequired
+}
+
 export default Calculator;

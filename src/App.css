@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .calculator-grid {
+    display: grid;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    grid-template-columns: repeat(4, 3rem);
+    grid-template-rows: repeat(6, 2rem);
+    gap: 2px;
+  }
+  
+  #result {
+    grid-column: 1/-1;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: gray;
+    padding-right: 1rem;
+  }
+  
+  #zero {
+    grid-column: span 2;
+  }
+  
+  #divide,
+  #multiply,
+  #subtract,
+  #add,
+  #equals {
+    background-color: orange;
+  }
+  

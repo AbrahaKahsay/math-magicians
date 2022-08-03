@@ -1,5 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 
+// Calculator class coponent which is the container class for Result and Button class
 class Calculator extends React.Component{
     render(){
         <div className="calculator-grid">
@@ -25,6 +27,7 @@ class Calculator extends React.Component{
     }
 }
 
+// Result class component
 class Result extends React.Component {
     constructor({name, value}){
         super({name, value})
@@ -38,6 +41,24 @@ class Result extends React.Component {
 }
 
 Result.prototype = {
+    name: PropTypes.string.isRequired,
+    value: PropTypes.string.isRequired
+}
+
+// Button class component
+class Button extends React.Component {
+    constructor({name, value}){
+        super({name, value});
+        this.name = name;
+        this.value = value;
+    }
+    render(){
+        return <button type="button" id={this.name}>{this.value}</button>
+    }
+
+}
+
+Button.prototype = {
     name: PropTypes.string.isRequired,
     value: PropTypes.string.isRequired
 }

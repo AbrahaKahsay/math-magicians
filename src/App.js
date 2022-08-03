@@ -11,3 +11,5 @@ class App extends React.Component{
     return (<Calculator />);
   }
 }
+
+export default App;

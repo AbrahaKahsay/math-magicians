@@ -1,6 +1,7 @@
 import React from 'react';
 import Result from './Result';
 import Button from './Buttons';
+import calculate from '../logic/calculate';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class Calculator extends React.Component {

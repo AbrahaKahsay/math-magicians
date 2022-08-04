@@ -8,14 +8,22 @@ class Result extends React.Component {
   }
 
   render() {
-    const {name, previous, operator, next, total } = this.props;
+    const {
+      name, previous, operator, next, total,
+    } = this.props;
 
-    return (<div id={name}>
-      <span>{previous}</span>{' '}
-      <span>{operator}</span>{' '}
-      <span>{next}</span> {br}
-      <span>{total}</span>
-    </div>);
+    return (
+      <div id={name}>
+        <span>{previous}</span>
+        {' '}
+        <span>{operator}</span>
+        {' '}
+        <span>{next}</span>
+        {' '}
+        {br}
+        <span>{total}</span>
+      </div>
+    );
   }
 }
 

@@ -1,37 +1,58 @@
 import React from 'react';
-import Result from './Result';
-import Button from './Buttons';
 import calculate from '../logic/calculate';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class Calculator extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+    this.btnClick = this.btnClick.bind(this);
+  }
+
+  btnClick = (event) => {
+    const calc = calculate(this.state, event.target.textContent);
+    this.setState(calc);
+  };
+
   render() {
+    const {
+      total,
+      next,
+      operation,
+    } = this.state;
     return (
       <div className="calculator-grid">
-        <Result name="result" value="0" />
+        <div id="result">
+          <span>{total}</span>
+          <span>{operation}</span>
+          <span>{next}</span>
+        </div>
+        <button type="button" onClick={this.btnClick} id="all-clear">AC</button>
+        <button type="button" onClick={this.btnClick} id="plus-minus">+/-</button>
+        <button type="button" onClick={this.btnClick} id="percent">%</button>
+        <button type="button" onClick={this.btnClick} id="divide">÷</button>
 
-        <Button name="all-clear" value="AC" />
-        <Button name="plus-minus" value="+/-" />
-        <Button name="percent" value="%" />
-        <Button name="divide" value="÷" />
+        <button type="button" onClick={this.btnClick} id="seven">7</button>
+        <button type="button" onClick={this.btnClick} id="eight">8</button>
+        <button type="button" onClick={this.btnClick} id="nine">9</button>
+        <button type="button" onClick={this.btnClick} id="multiply">x</button>
 
-        <Button name="seven" value="7" />
-        <Button name="eight" value="8" />
-        <Button name="nine" value="9" />
-        <Button name="multiply" value="x" />
+        <button type="button" onClick={this.btnClick} id="four">4</button>
+        <button type="button" onClick={this.btnClick} id="five">5</button>
+        <button type="button" onClick={this.btnClick} id="six">6</button>
+        <button type="button" onClick={this.btnClick} id="subtract">-</button>
 
-        <Button name="four" value="4" />
-        <Button name="five" value="5" />
-        <Button name="six" value="6" />
-        <Button name="subtract" value="-" />
-
-        <Button name="one" value="1" />
-        <Button name="two" value="2" />
-        <Button name="three" value="3" />
-        <Button name="add" value="+" />
-        <Button name="zero" value="0" />
-        <Button name="dot" value="." />
-        <Button name="equals" value="=" />
+        <button type="button" onClick={this.btnClick} id="one">1</button>
+        <button type="button" onClick={this.btnClick} id="two">2</button>
+        <button type="button" onClick={this.btnClick} id="three">3</button>
+        <button type="button" onClick={this.btnClick} id="add">+</button>
+        <button type="button" onClick={this.btnClick} id="zero">0</button>
+        <button type="button" onClick={this.btnClick} id="dot">.</button>
+        <button type="button" onClick={this.btnClick} id="equals">=</button>
       </div>
     );
   }

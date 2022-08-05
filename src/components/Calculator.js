@@ -9,11 +9,9 @@ const Calculator = ()=> {
       next: null,
       operation: null,
     });
-    
 
   btnClick = (event) => {
-    const calc = calculate(this.state, event.target.textContent);
-    this.setState(calc);
+    setState((prevState) => calculate(prevState, event.target.textContent));
   };
 
   render() {

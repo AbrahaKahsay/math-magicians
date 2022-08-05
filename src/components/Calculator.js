@@ -1,28 +1,23 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 
 function Calculator() {
-    const [state, setState] = useState({
-      total: null,
-      next: null,
-      operation: null,
-    });
+  const [state, setState] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
 
-    const total = state.total;
-    const next = state.next;
-    const operation = state.operation;
-    
-  btnClick = (event) => {
+  const btnClick = (event) => {
     setState((prevState) => calculate(prevState, event.target.textContent));
   };
 
-  
   return (
     <div className="calculator-grid">
       <div id="result">
-        <span>{total}</span>
-        <span>{operation}</span>
-        <span>{next}</span>
+        <span>{state.total}</span>
+        <span>{state.operation}</span>
+        <span>{state.next}</span>
       </div>
       <button type="button" onClick={btnClick} id="all-clear">AC</button>
       <button type="button" onClick={btnClick} id="plus-minus">+/-</button>
@@ -48,7 +43,6 @@ function Calculator() {
       <button type="button" onClick={btnClick} id="equals">=</button>
     </div>
   );
-
 }
 
 export default Calculator;

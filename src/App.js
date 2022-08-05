@@ -2,7 +2,7 @@ import React from 'react';
 import Calculator from './components/Calculator';
 import './App.css';
 
-function App () {
+function App() {
   return (<Calculator />);
 }
 

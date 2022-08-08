@@ -23,7 +23,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-end;
-  background-color: gray;
+  background-color: rgb(75, 202, 97);
   padding-right: 1rem;
   font-size: 1.5rem;
   word-wrap: break-word;

@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Math Magicians
 
-## Available Scripts
+Math Magicians is a calculator application built with Reacrt. First, I will set up the environment and tools needed to develop a React application. And next, I will develop the actual application.
 
-In the project directory, you can run:
+## Screenshot
 
-### `npm start`
+![image](https://user-images.githubusercontent.com/75738563/183905339-a5f5fe0c-d9ae-4a7f-94f2-22184b7f3bc5.png)
+![image](https://user-images.githubusercontent.com/75738563/183905559-16adbbbb-4f93-4c18-a82c-73ac4aac91a8.png)
+![image](https://user-images.githubusercontent.com/75738563/183905720-a2628b98-d9be-401a-be3a-b10ab9d704cd.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Built with
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Major languages: HTML, CSS, JavaScript, React
+- Technologies used: VS Code, Github, Linters, Firefox web-browser
+- webpack
+- babel
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Clone the repository
+- create-react-app todo-react
+- cd todo-react
+- and setup the linter
 
-### `npm run build`
+## Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- npm ( Node Package Manager )
+- git and Github Account
+- webpack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Setup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To get a local copy up and running follow these simple example steps.
 
-### `npm run eject`
+- Open terminal
+- Change the directory you want put the repo
+- Finally run git clone https://github.com/AbrahaKahsay/math-magicians.git follwed by cd repo-name/
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Stylelint** linter
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+`npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **ESLint** linter
+  `npm install --save-dev eslint@7.x eslint-config-airbnb@18.x eslint-plugin-import@2.x eslint-plugin-jsx-a11y@6.x eslint-plugin-react@7.x eslint-plugin-react-hooks@4.x @babel/eslint-parser@7.x @babel/core@7.x @babel/plugin-syntax-jsx@7.x @babel/preset-env@7.x @babel/preset-react@7.x`
 
-## Learn More
+### Run tests
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Stylelint** linter
+  - `npx stylelint "**/*.{css,scss}"` on the root of your directory of your project.
+- **ESLint** linter
+  - `npx eslint .` on the root of your directory of your project.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Authors
 
-### Code Splitting
+👤 **Abraha Kahsay**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- GitHub: [@AbrahaKahsay](https://github.com/AbrahaKahsay)
+- Twitter: [@Alamsbut](https://twitter.com/Alamsbut)
+- LinkedIn: [abraha-kahsay](www.linkedin.com/in/abraha-kahsay-492771135/)
 
-### Analyzing the Bundle Size
+## Contributers
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Acknowledgments
 
-### Making a Progressive Web App
+- To Microverse morning session team,reviewers and standup team memebers.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📝 License
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./MIT.md) licensed.

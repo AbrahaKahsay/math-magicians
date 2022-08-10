@@ -10,20 +10,24 @@ body {
 .calculator-grid {
   display: grid;
   margin-top: 2rem;
-  margin-left: 4rem;
-  grid-template-columns: repeat(4, 3rem);
-  grid-template-rows: repeat(6, 2rem);
+  grid-template-columns: repeat(4, 3.5rem);
+  grid-template-rows: minmax(6rem, auto) repeat(6, 3rem);
   gap: 2px;
+  justify-content: center;
 }
 
 #result {
   grid-column: 1/-1;
   color: white;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: gray;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  background-color: rgb(75, 202, 97);
   padding-right: 1rem;
+  font-size: 1.5rem;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 #zero {
@@ -36,4 +40,94 @@ body {
 #add,
 #equals {
   background-color: orange;
+  font-size: 1.2rem;
+}
+
+#divide:hover,
+#divide:focus {
+  background-color: rgb(255, 238, 0);
+}
+
+#multiply:hover,
+#multiply:focus {
+  background-color: rgb(255, 238, 0);
+}
+
+#subtract:hover,
+#subtract:focus {
+  background-color: rgb(255, 238, 0);
+}
+
+#add:hover,
+#add:focus {
+  background-color: rgb(255, 238, 0);
+}
+
+#equals:hover,
+#equals:focus {
+  background-color: rgb(255, 238, 0);
+}
+
+#one,
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight,
+#nine,
+#zero,
+#dot,
+#all-clear,
+#plus-minus,
+#percent {
+  font-size: 1.2rem;
+}
+
+button {
+  border-style: solid;
+  outline: none;
+}
+
+#main-container {
+  margin: 2vw;
+}
+
+/* .calc-container,
+.quote-container {
+  margin: 2vw;
+} */
+.home-container h3,
+.calc-container h3 {
+  margin-left: 5vw;
+  font-weight: 500;
+}
+
+.heading {
+  margin: 3vw;
+}
+
+#footer-container {
+  position: fixed;
+  bottom: 0;
+  left: 30%;
+  font-size: medium;
+}
+
+.quote {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  font-weight: 500;
+  transform: translate(-40%, -40%);
+}
+
+.lorem p {
+  margin: 5vw;
+  font-size: medium;
+}
+
+.active {
+  color: orange !important;
 }

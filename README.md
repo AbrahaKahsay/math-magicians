@@ -1,8 +1,14 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# todo-react
+# Math Magicians
 
-This app is a React todo app which allows a user to add, edit and remove a task. The app is intended to cosolidate an understanding of React, components, props, state, and hooks, by following a tutorial.
+Math Magicians is a calculator application built with Reacrt. First, I will set up the environment and tools needed to develop a React application. And next, I will develop the actual application.
+
+## Screenshot
+
+![image](https://user-images.githubusercontent.com/75738563/183905339-a5f5fe0c-d9ae-4a7f-94f2-22184b7f3bc5.png)
+![image](https://user-images.githubusercontent.com/75738563/183905559-16adbbbb-4f93-4c18-a82c-73ac4aac91a8.png)
+![image](https://user-images.githubusercontent.com/75738563/183905720-a2628b98-d9be-401a-be3a-b10ab9d704cd.png)
 
 ## Built with
 
@@ -30,7 +36,7 @@ To get a local copy up and running follow these simple example steps.
 
 - Open terminal
 - Change the directory you want put the repo
-- Finally run git clone https://github.com/AbrahaKahsay/todo-react.git follwed by cd repo-name/
+- Finally run git clone https://github.com/AbrahaKahsay/math-magicians.git follwed by cd repo-name/
 
 ### Install
 

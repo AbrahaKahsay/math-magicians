@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import './App';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
-import Calculator from './components/pages/Calculator';
+import Footer from './components/Footer';
 import Home from './components/pages/Home';
 import Quote from './components/pages/Quote';
+import CalcPage from './components/pages/CalcPage';
+import Navbar from './components/Navbar';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,7 +18,7 @@ root.render(
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Calculator" element={<Calculator />} />
+          <Route path="/Calculator" element={<CalcPage />} />
           <Route path="/Quote" element={<Quote />} />
         </Routes>
         <Footer />

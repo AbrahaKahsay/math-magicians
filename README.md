@@ -2,7 +2,7 @@
 
 # Math Magicians
 
-Math Magicians is a calculator application built with Reacrt. First, I will set up the environment and tools needed to develop a React application. And next, I will develop the actual application. see live demo at https://peaceful-clafoutis-e8f13a.netlify.app/
+Math Magicians is a calculator application built with Reacrt. First, I will set up the environment and tools needed to develop a React application. And next, I will develop the actual application. see live demo at https://abraha-math-magicians.netlify.app/
 
 ## Screenshot
 
